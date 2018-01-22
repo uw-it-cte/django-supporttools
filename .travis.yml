@@ -12,11 +12,11 @@ env:
 dist: precise
 
 before_script:
+- pip install -U Django==$DJANGO_VERSION
 - pip install -e .
 - pip install pep8
 - pip install coverage
 - pip install python-coveralls
-- pip install -U Django==$DJANGO_VERSION
 - npm install jshint
 - cp travis-ci/manage.py manage.py
 
