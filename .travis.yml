@@ -16,7 +16,7 @@ before_script:
 - pip install pep8
 - pip install coverage
 - pip install python-coveralls
-- npm install jshint
+- npm install -g jshint
 - cp travis-ci/manage.py manage.py
 
 script:
